@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="navigation">
+  <view class ="back1">
+    <image class="back" src="../materials/back1.jpg">
+    </image>
+  </view>
+  <view class="groupName2">
+    <view class="groupName1">
+    <image style="width:70rpx;height:70rpx;border-radius: 50%;margin-left:5rpx;margin-right:5rpx" src="../materials/Image.jpg"></image>
+    <image style="width:70rpx;height:70rpx;border-radius: 50%;margin-left:5rpx;margin-right:5rpx"  src="../materials/Image.jpg"></image>
+    <image style="width:70rpx;height:70rpx;border-radius: 50%;margin-left:5rpx;margin-right:5rpx" src="../materials/Image.jpg"></image>
+    </view>
+    <view class="groupName3">
+    </view>
+  </view>
+
+  <view class="add1" bindtap="chat">
+    <image  class="add" src="../materials/add.png"></image>
+  </view>
+</view>
+<scroll-view class="chat-container" scroll-y scroll-into-view="{{lastMessageId}}" scroll-top="9999999999">
+    <view class="detailInfo">
+      <image class="personAvatar" src="../materials/Image.jpg"  style="width:70rpx;height:70rpx;border-radius: 50%;"></image>
+       <text class="personName">wagada</text> 
+    </view>
+    <view class="detailInfo">
+      <image class="personAvatar" src="../materials/Image.jpg"  style="width:70rpx;height:70rpx;border-radius: 50%;"></image>
+       <text class="personName">wagada</text> 
+    </view>
+    <view class="detailInfo">
+      <image class="personAvatar" src="../materials/Image.jpg"  style="width:70rpx;height:70rpx;border-radius: 50%;"></image>
+       <text class="personName">wagada</text> 
+    </view>
+    <view class="detailInfo">
+      <image class="personAvatar" src="../materials/Image.jpg"  style="width:70rpx;height:70rpx;border-radius: 50%;"></image>
+       <text class="personName">wagada</text> 
+    </view>
+    <view class="detailInfo">
+      <image class="personAvatar" src="../materials/Image.jpg"  style="width:70rpx;height:70rpx;border-radius: 50%;"></image>
+       <text class="personName">wagada</text> 
+    </view>
+   
+    
+</scroll-view>
+ <view class="input-panel">
+    <image class="pic-icon" src="../materials/clip-icon.png"></image>
+        
+    <input type="text" value="{{inputContent}}" bindchange="changeInputContent" class="send-input"></input>
+      <button class ="send-btn" size="mini">
+         <image src="../materials/send2.png" style="width:65rpx;height:65rpx"></image>
+      </button>
+    </view>  
+</view>
+
