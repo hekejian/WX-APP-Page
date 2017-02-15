@@ -67,10 +67,12 @@
 Shares fell by as much as 9% on Tuesday and have lost about 50% since late December, when it first warned about the extent of the problems.</text>
   </view>
     </view>
-  
-<view class="test">
-  <image src="../materials/send.png" style="width:100rpx;height:100rpx"></image>
+<view class="test1">
+  <view class="test">
+    <image src="../materials/send.png" style="width:100rpx;height:100rpx"></image>
+  </view>
 </view>
+
 
  <button type="primary" bindtap="navi" size="mini">返回</button>
 </view>

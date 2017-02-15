@@ -1,0 +1,60 @@
+
+    <view class="page-section">
+      <view class="weui-cells__title">可以自动聚焦的input</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" auto-focus placeholder="将会获取焦点"/>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="page-section">
+      <view class="weui-cells__title">实时获取输入值：{{inputValue}}</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input"  maxlength="10" bindinput="bindKeyInput" placeholder="输入同步到view中"/>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="page-section">
+      <view class="weui-cells__title">数字输入的input</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" type="number" placeholder="这是一个数字输入框" />
+        </view>
+      </view>
+    </view>
+
+
+    <view class="page-section">
+      <view class="page-section-title">输入区域高度自适应，不会出现滚动条</view>
+      <view class="textarea-wrp">
+        <textarea bindblur="bindTextAreaBlur" auto-height />
+      </view>
+    </view>
+
+
+    <view class="page-section">
+      <view class="page-section-title">这是一个可以自动聚焦的textarea</view>
+      <view class="textarea-wrp">
+        <textarea auto-focus="true" style="height: 3em" />
+      </view>
+    </view>
+
+
+    <view class="btn-area">
+      <navigator url="navigate?title=navigate" hover-class="navigator-hover">
+        <button type="default">跳转到新页面</button>
+      </navigator>
+      <navigator url="redirect?title=redirect" redirect hover-class="other-navigator-hover">
+        <button type="default">在当前页打开</button>
+      </navigator>
+    </view>
+  
+
+    <view class="page-section page-section-gap" style="text-align: center;">
+      <audio style="text-align: left" src="{{current.src}}" poster="{{current.poster}}" name="{{current.name}}" author="{{current.author}}" action="{{audioAction}}" controls></audio>
+    </view>
